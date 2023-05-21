@@ -33,7 +33,7 @@ const Home = () => {
 					return <dd key={i} onMouseOver={() => setActButon(true)} onMouseOut={() => setActButon(false)}> {task} <a className={actButon ? "" : "disable"} onClick={() => {deleteTask(i)}}>X</a></dd>
 				})}
 			</ul>
-			<p>{task.length === 0 ? "No tasks added, add one" : task.length + " item left"}</p>
+			<p>{task.length === 0 ? "No tasks, add a task" : task.length + " item left"}</p>
 		</div>
 		</>
 	);
